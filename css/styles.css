@@ -2409,7 +2409,22 @@ td:last-child {
 /* ------------------------------------------------------------------- 
  * ## skillbars 
  * ------------------------------------------------------------------- */
-.skill-bars {
+ .s-about__skills {
+    padding-top : var(--vspace-3);
+}
+.s-about__skills .skill-bars li {
+    margin-bottom : calc(2.25 * var(--space));
+    flex          : none;
+    width         : 50%;
+}
+ .s-about__skills .skill-bars {
+    --bar-padding : var(--timeline-left-padding);
+    margin-top    : var(--vspace-2_5);
+    display       : flex;
+    flex-flow     : row wrap;
+}
+
+ .skill-bars {
     list-style : none;
     margin     : var(--vspace-2) 0 var(--vspace-1);
 }
