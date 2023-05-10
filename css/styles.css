@@ -518,6 +518,10 @@ body {
 
 body {
     background-color            : var(--color-body);
+    background-image: url(../images/fon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     -webkit-overflow-scrolling  : touch;
     -webkit-text-size-adjust    : 100%;
     -webkit-tap-highlight-color : rgba(0, 0, 0, 0);
@@ -2410,7 +2414,8 @@ td:last-child {
  * ## skillbars 
  * ------------------------------------------------------------------- */
  .s-about__skills {
-    padding-top : var(--vspace-3);
+    padding-top : var(--vspace-1);
+    padding-bottom: var(--vspace-1);
 }
 .s-about__skills .skill-bars li {
     margin-bottom : calc(2.25 * var(--space));
@@ -2431,7 +2436,7 @@ td:last-child {
 
 .skill-bars li {
     height        : .4rem;
-    background    : transparent;
+    background    : var(--color-gray-7);
     width         : 100%;
     margin-bottom : calc(var(--vspace-2) - .4rem);
     padding       : 0;
@@ -3011,6 +3016,7 @@ img.u-pull-left {
     border-width     : 1px;
     border-color     : var(--color-border);
     border-style     : none solid solid solid;
+    text-align       : center;
 }
 
 .main-nav li {
@@ -3411,7 +3417,7 @@ img.u-pull-left {
 
 .s-about {
     padding-top    : var(--vspace-4);
-    padding-bottom : var(--vspace-3);
+    padding-bottom : var(--vspace-1);
 }
 
 /* --------------------------------------------------------------------
@@ -3447,7 +3453,7 @@ img.u-pull-left {
  * ## about expertise
  * -------------------------------------------------------------------- */
 .about-expertise {
-    padding-top : calc(6 * var(--space));
+    padding-top : calc(4 * var(--space));
 }
 
 .about-expertise .skills-list {
@@ -3601,7 +3607,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 
 .s-works {
-    padding-top    : var(--vspace-5);
+    padding-top    : var(--vspace-1);
     padding-bottom : var(--vspace-3_5);
 }
 
